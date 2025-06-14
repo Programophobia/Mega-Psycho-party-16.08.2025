@@ -47,3 +47,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 nextQuestion();
             });
             questionElement.appendChild(optionElement);
+        });
+
+        quizContainer.appendChild(questionElement);
+    }
+
+    function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < quizData.length) {
+            loadQuestion();
+        } else {
+            quizContainer.innerHTML = "<h2>🎉 You completed the quiz! Party on! 🎉</h2>";
+        }
+    }
+
+    loadQuestion();
+});
