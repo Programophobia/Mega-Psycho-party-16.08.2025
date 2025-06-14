@@ -14,33 +14,19 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /*PHOTOS*/
-.img-1 {background-image: url('../images/Copilot_20250601_105856.png');}
-.img-2 {background-image: url('../images/Copilot_20250601_142053.png');}
-.img-3 {background-image: url('../images/Copilot_20250601_105841.png');}
-.img-4 {background-image: url('../images/Copilot_20250601_152259.png');}
-.img-5 {background-image: url('../images/Copilot_20250601_105829.png');}
-.img-6 {background-image: url('../images/Copilot_20250601_142057.png');}
-.img-7 {background-image: url('../images/Copilot_20250601_105814.png');}
-.img-8 {background-image: url('../images/Copilot_20250601_143250.png');}
-.img-11 {background-image: url('../images/Copilot_20250601_142939.png');}
-.img-10 {background-image: url('../images/Copilot_20250601_144740.png');}
-.img-9 {background-image: url('../images/x.png');}
-.img-12 {background-image: url('../images/Copilot_20250601_082500.png');}
-.img-113 {background-image: url('../images/Copilot_20250608_060252.png');}
-.img-123 {background-image: url('../images/Copilot_20250608_060259.png');}
-.img-13 {background-image: url('../images/Copilot_20250608_061952.png');}
-.img-14 {background-image: url('../images/Copilot_20250608_060327.png');}
-.img-15 {background-image: url('../images/Copilot_20250608_062810.png');}
-.img-16 {background-image: url('../images/Copilot_20250608_063341.png');}
-.img-17 {background-image: url('../images/Copilot_20250608_065238.png');}
-.img-18 {background-image: url('../images/Copilot_20250608_065815.png');}
-.img-19 {background-image: url('../images/Copilot_20250608_071306.png');}
-.img-110 {background-image: url('../images/Copilot_20250608_071707.png');}
-.img-111 {background-image: url('../images/Copilot_20250608_072057.png');}
-.img-112 {background-image: url('../images/Copilot_20250608_072703.png');}
-.a{
-    
+.party-end {
+    font-size: 24px;
+    text-align: center;
+    animation: psychedelic 4s infinite alternate;
+    color: #ff00ff;
 }
+
+@keyframes psychedelic {
+    0% { transform: scale(1) rotate(0deg); color: #ff00ff; }
+    50% { transform: scale(1.1) rotate(10deg); color: #00ffff; }
+    100% { transform: scale(1) rotate(-10deg); color: #ffff00; }
+}
+
 /*Gallery*/
 body {
     background: black;

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     let audio = document.getElementById("partyMusic");
-    audio.volume = 0.5; 
+    audio.volume = 2; 
     audio.play().catch(() => {
         console.log("Auto-play blocked, user interaction required.");
         document.addEventListener("click", function() {

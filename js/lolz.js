@@ -66,9 +66,34 @@ document.addEventListener("DOMContentLoaded", function() {
         if (currentQuestionIndex < quizData.length) {
             loadQuestion();
         } else {
-            quizContainer.innerHTML = "<h2>🎉 You completed the quiz! Party on! 🎉</h2>";
+            quizContainer.innerHTML = "<h2>🌀✨ GRAVITY HAS NO MEANING. YOU TRANSCENDED PARTY DIMENSIONS! ✨🌀</h2><br><p>💀 Reality collapses. Colors explode. Drum & Bass echoes through eternity. 💀</p><br><p>🚀 You have reached the ultimate level of PARTY CHAOS. Welcome to infinity. 🚀</p>";
         }
     }
 
     loadQuestion();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    let playlist = [
+        "muza/a.mp3",
+        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    ]; // Dodaj więcej linków, jeśli chcesz!
+
+    let currentTrack = 0;
+    let audio = new Audio(playlist[currentTrack]);
+
+    audio.volume = 0.5; 
+    audio.play().catch(() => {
+        document.addEventListener("click", function() {
+            audio.play();
+        }, { once: true });
+    });
+
+    audio.addEventListener("ended", function() {
+        currentTrack = (currentTrack + 1) % playlist.length; // Przechodzi do kolejnego utworu
+        audio.src = playlist[currentTrack];
+        audio.play();
+    });
+});
+
