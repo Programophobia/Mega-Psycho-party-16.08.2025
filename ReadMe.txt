@@ -1,1 +1,1 @@
-https://mojchopak.netlify.app/
+https://partymaster.netlify.app/
