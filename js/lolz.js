@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     let playlist = [
         "muza/a.mp3",
-        "muza/b.mp3",
-        "muza/c.mp3"
+        "muza/c.mp3",
+        "muza/b.mp3"
     ]; // Dodaj więcej linków, jeśli chcesz!
 
     let currentTrack = 0;
