@@ -2,8 +2,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const quizData = [
         { question: "The beer runs out at the party. What do you do?", options: ["Run to the store.", "Brew your own beer.", "Call it a detox party.", "End the party."], answer: 0, explanation: "Best to grab more beer to keep the party alive!" },
         { question: "Your friend spills beer on the DJ's equipment. What's your next move?", options: ["Blame the dog.", "Pay for the damage.", "Start an acoustic jam session.", "Turn the party into karaoke night."], answer: 1, explanation: "Paying for damages keeps the DJ happy!" },
-        { question: "The neighbors complain about the noise. How do you handle it?", options: ["Invite them in.", "Turn down the music.", "Ignore them and turn it up.", "Move the party elsewhere."], answer: 1, explanation: "Lowering the volume keeps things peaceful!" }
+       { 
+    question: "Someone shows up to the party dressed as a giant taco. What do you do?", 
+    options: ["Declare them the official party mascot.", "Ask them where the guacamole is.", "Challenge them to a salsa dance battle.", "Ignore them and pretend it's normal."], 
+    answer: 0, 
+    explanation: "Declaring them the official party mascot adds humor and keeps the party vibe fun and welcoming!" 
+},
+
+       
+       { question: "The neighbors complain about the noise. How do you handle it?", options: ["Invite them in.", "Turn down the music.", "Ignore them and turn it up.", "Move the party elsewhere."], answer: 1, explanation: "Lowering the volume keeps things peaceful!" }
     ];
+  
 
     let currentQuestionIndex = 0;
     const quizContainer = document.getElementById("quiz");
