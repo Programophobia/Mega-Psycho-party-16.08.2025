@@ -99,10 +99,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.body.classList.add("party-mode"); // aktywuje tło
 document.getElementById("party-screen").style.display = "block"; // pokazuje rave'owy ekran
+
+
 const favicons = [
-  "disco1.svg",
-  "disco2.svg",
-  "disco3.svg"
+  "js/disco1.svg",
+  "js/disco2.svg",
+  "js/disco3.svg"
 ];
 
 let i = 0;
@@ -113,4 +115,4 @@ setInterval(() => {
     link.href = favicons[i % favicons.length];
     i++;
   }
-}, 1200); // zmienia co 1.2 sekundy
+}, 1200); // zmiana co 1.2 sekundy
