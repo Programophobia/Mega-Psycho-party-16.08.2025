@@ -116,6 +116,17 @@ body.party-mode {
   0%, 100% { filter: hue-rotate(0deg); }
   50% { filter: hue-rotate(180deg); }
 }
+body.party-mode {
+  background: radial-gradient(circle at center, #ff00ff, #6600ff, #00ffff);
+  background-size: 400% 400%;
+  animation: raveBackground 8s infinite ease-in-out;
+}
+
+@keyframes raveBackground {
+  0% { background-position: 0% 50%; filter: hue-rotate(0deg); }
+  50% { background-position: 100% 50%; filter: hue-rotate(180deg); }
+  100% { background-position: 0% 50%; filter: hue-rotate(360deg); }
+}
 
 /*Media Mobile RWD*/
 
