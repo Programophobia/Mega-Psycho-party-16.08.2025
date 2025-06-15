@@ -97,3 +97,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.body.classList.add("party-mode"); // aktywuje tło
+document.getElementById("party-screen").style.display = "block"; // pokazuje rave'owy ekran
