@@ -107,6 +107,15 @@ body .element:hover {
   75% { transform: rotate(3deg) scale(0.95); background-color: #ff6600; }
   100% { transform: rotate(0deg) scale(1); background-color: #ff00ff; }
 }
+body.party-mode {
+  background: radial-gradient(circle, #ff0080, #8000ff, #00ffff);
+  animation: pulseBG 6s infinite ease-in-out;
+}
+
+@keyframes pulseBG {
+  0%, 100% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(180deg); }
+}
 
 /*Media Mobile RWD*/
 
