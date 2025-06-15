@@ -102,12 +102,15 @@ document.getElementById("party-screen").style.display = "block"; // pokazuje rav
 
 
 const favicons = [
-  "js/disco1.svg",
-  "js/disco2.svg",
-  "js/disco3.svg"
+  "js/disco1.png",
+  "js/disco2.png",
+  "js/disco3.png"
 ];
 
 let i = 0;
+
+
+
 
 setInterval(() => {
   const link = document.querySelector("link[rel~='icon']");
