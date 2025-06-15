@@ -112,7 +112,9 @@ let i = 0;
 setInterval(() => {
   const link = document.querySelector("link[rel~='icon']");
   if (link) {
-    link.href = favicons[i % favicons.length];
+    link.type = "image/svg+xml";
+    link.href = favicons[i % favicons.length] + "?v=" + new Date().getTime();
     i++;
   }
-}, 1200); // zmiana co 1.2 sekundy
+}, 1200);
+
