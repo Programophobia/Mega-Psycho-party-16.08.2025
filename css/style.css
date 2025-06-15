@@ -117,7 +117,7 @@ body.party-mode {
   50% { filter: hue-rotate(180deg); }
 }
 body.party-mode {
-  background: radial-gradient(circle at center, #00ff04, #be4b11, #e4c80d);
+  background: radial-gradient(circle at center, #00ff04, #be4b11, #e4c80d, #2a062a, #aba6ab, #1806dc);
   background-size: 400% 400%;
   animation: raveBackground 8s infinite ease-in-out;
 }
