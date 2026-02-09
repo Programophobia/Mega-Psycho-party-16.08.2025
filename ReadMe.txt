@@ -1,1 +1,1 @@
- https://partymaster.netlify.app/
+https://partymaster.netlify.app/
